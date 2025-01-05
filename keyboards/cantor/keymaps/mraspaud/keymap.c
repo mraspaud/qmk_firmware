@@ -195,15 +195,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                             KC_Z,    CKC_R, KC_UNDS,                     KC_ENT,  CKC_SPC,  LT_Q
     ),
     [L_NUMNAV] = LAYOUT_split_3x6_3( // num-nav
-        _______, US_ASTR, KC_9,    KC_8,    KC_7,    KC_SLSH,                                      _______, KC_PGDN, KC_UP,   KC_PGUP, _______, _______,
-        _______, KC_0,    KC_6,    CKC_5,   KC_4,    _______,                        KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  _______,
+        US_MUL,  US_ASTR, KC_9,    KC_8,    KC_7,    KC_SLSH,                                      _______, KC_PGDN, KC_UP,   KC_PGUP, _______, _______,
+        US_DIV,  KC_0,    KC_6,    CKC_5,   KC_4,    _______,                                      KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  _______,
         _______, _______, KC_3,    KC_2,    KC_1,    KC_DOT,                                       _______, WD_ST,   _______, WD_ND,   _______, _______,
                                             _______, _______, _______,                    _______, _______, _______
     ),
     [L_SYM] = LAYOUT_split_3x6_3(
-        KC_ESC,  US_QUOT, US_EURO, KC_PIPE, US_PERC, US_DIAE,                                      US_AE,   U_AGRV,  U_ECRC,  U_ICRC,  US_MICR, _______,
-        US_LDAQ, US_CCED, KC_DLR,  CKC_AT,   US_TILD, US_CIRC,                                     U_ACRC,  US_ADIA, U_EGRV,  US_EACU, US_ARNG, US_RDAQ,
-        _______, _______, US_DEG,  US_BSLS, US_AMPR, RALT(KC_X),                                   U_UCRC,  U_UGRV,  US_ODIA, U_OCRC,  US_OE,   _______,
+        KC_ESC,  US_QUOT, US_EURO, KC_PIPE, US_PERC, US_DIAE,                                      US_AE,   U_ACRC,  U_ECRC,  U_ICRC,  US_MICR, US_NTIL,
+        US_LDAQ, US_CCED, KC_DLR,  CKC_AT,   US_TILD, US_CIRC,                                     U_AGRV,  US_ADIA, U_EGRV,  US_EACU, US_ARNG, US_RDAQ,
+        US_IQUE, US_IEXL, US_DEG,  US_BSLS, US_AMPR, RALT(KC_X),                                   U_UCRC,  U_UGRV,  US_ODIA, U_OCRC,  US_OE,   US_OSTR,
                                             _______, _______, _______,                    _______, RALT(KC_SPC),  _______
     ),
 
