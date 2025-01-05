@@ -197,7 +197,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [L_NUMNAV] = LAYOUT_split_3x6_3( // num-nav
         US_MUL,  US_ASTR, KC_9,    KC_8,    KC_7,    KC_SLSH,                                      _______, KC_PGDN, KC_UP,   KC_PGUP, _______, _______,
         US_DIV,  KC_0,    KC_6,    CKC_5,   KC_4,    _______,                                      KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  _______,
-        _______, _______, KC_3,    KC_2,    KC_1,    KC_DOT,                                       _______, WD_ST,   _______, WD_ND,   _______, _______,
+        _______, S(US_MICR), KC_3,    KC_2,    KC_1,    KC_DOT,                                       _______, WD_ST,   _______, WD_ND,   _______, _______,
                                             _______, _______, _______,                    _______, _______, _______
     ),
     [L_SYM] = LAYOUT_split_3x6_3(
