@@ -159,17 +159,16 @@ const uint32_t PROGMEM unicode_map[] = {
 #define U_HASH UP(HSH, ELL)
 
 const custom_shift_key_t custom_shift_keys[] = {
-  {KC_DOT , KC_EXLM}, // Shift . is ?
-  {KC_COMM, KC_QUES}, // Shift , is !
+  {KC_DOT , US_SCLN}, // Shift . is :
+  {KC_COMM, KC_COLN}, // Shift , is ;
   {US_DQUO, KC_EQL }, // Shift " is =
   {KC_MINS, S(KC_EQL) }, // Shift - is +
-  {KC_COLN, KC_SCLN}, // Shift : is ;
   {KC_LPRN, KC_LABK }, // Shift ( is <
   {KC_RPRN, KC_RABK }, // Shift ) is >
   {KC_UNDS, KC_UNDS }, // Shift _ is _
-  // {US_HASH, US_MUL }, // Shift # is …
   {KC_SLSH, US_ASTR }, // Shift / is *
   {US_RSQU, US_GRV }, // Shift ’ is *
+  {KC_EXLM, KC_QUES}, // Shift ! is ?
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
@@ -190,7 +189,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       *                       └───┘   └───┘
       */
     [L_BASE] = LAYOUT_split_3x6_3( // base
-        KC_ESC,  US_RSQU, KC_B,    KC_H,    KC_G,    US_DQUO,                                      U_HASH, KC_DOT,  KC_SLSH, KC_J,    KC_X,    US_COLN,
+        KC_ESC,  US_RSQU, KC_B,    KC_H,    KC_G,    US_DQUO,                                      U_HASH, KC_DOT,   KC_SLSH, KC_J,    KC_X,    KC_EXLM,
         KC_LPRN, CKC_C,   CKC_S,   CKC_N,   CKC_T,   KC_K,                                         KC_COMM, CKC_A,   CKC_E,   CKC_I,   CKC_M,   KC_RPRN,
         KC_LBRC, KC_P,    KC_F,    KC_L,    KC_D,    KC_V,                                         KC_MINS, KC_U,    KC_O,    KC_Y,    KC_W,    KC_RBRC,
                                             KC_Z,    CKC_R, KC_UNDS,                     KC_ENT,  CKC_SPC,  LT_Q
